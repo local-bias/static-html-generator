@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply text-slate-600 antialiased;
+  font-family: 'Yu Gothic Medium', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', Meiryo, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #1e8cbe77;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  @apply w-1 h-1 md:w-2 md:h-2;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-sm;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
