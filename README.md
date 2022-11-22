@@ -29,11 +29,13 @@ yarn dev
 ## 出力
 
 ```bash
-npm run export
+npm run export:server # デプロイ用
+npm run export:local # ローカル閲覧用
 
 # or
 
-yarn export
+yarn export:server # デプロイ用
+yarn export:local # ローカル閲覧用
 ```
 
 プロジェクトフォルダ直下の`out`フォルダに結果が出力されます

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export && node scripts/fix-html.js",
+    "export:server": "next build && next export",
+    "export:local": "next build && next export && node scripts/fix-html.js",
     "start": "next start",
     "lint": "next lint"
   },
