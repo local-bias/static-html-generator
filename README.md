@@ -36,6 +36,4 @@ npm run export
 yarn export
 ```
 
-## 出力先フォルダ
-
 プロジェクトフォルダ直下の`out`フォルダに結果が出力されます
