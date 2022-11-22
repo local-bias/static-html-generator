@@ -6,8 +6,7 @@
 
   const out = resolve(cwd(), 'out');
 
-  const rewriteHTML = (html) =>
-    html.replace(/\<link rel="stylesheet" href="\/_next/, `<link rel="stylesheet" href="./_next`);
+  const rewriteHTML = (html) => html.replace(/(href|src)="\/_next/g, `$1="./_next`);
 
   const rewriteFile = (file) => {
     const content = readFileSync(file, 'utf8');
